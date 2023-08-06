@@ -1,0 +1,384 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #000066;
+}
+
+/* home */
+
+.caixa-principal {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/imagem_web.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #F0F8FF;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.portfolio {
+    font-size: 35px; 
+}
+
+.titulo {
+    font-size:400%;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+li :hover {
+    color: #00ff00;
+    transition: 0.5s;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.apresentacao {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.apresentacao h4 {
+    font-weight:200;
+}
+
+h1 span {
+    color: #00ff00;
+}
+
+/* sobre mim */
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 120px;
+    background-color: 	#FFFAFA;
+}
+
+section div h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+section img {
+    height: 400px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+section div p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+button {
+    color: #00ff00;
+    background-color: #000066;
+    font-size: 16px;
+    height: 45px;
+    width: 160px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+button:hover {
+    color: #000066;
+    background-color: #00ff00;
+    transition: 0.5s;
+    border: 2px solid #000066;
+    font-weight: bold;
+}
+
+/* projetos */
+
+.projetos {
+    background-color: #F0F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.projetos h2 {
+    font-size: 45px;
+    margin-bottom: 95px;
+}
+
+.card {
+    height: 380px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {    
+    height: 220px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.card :hover {    
+    transform: scale(1.2);
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* habilidades */
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.habilidades h2 {
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+
+.skill {
+    height: 180px;
+    width: 130px;
+    text-align: center;
+}
+
+.skill img {    
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.skill :hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.skill a {
+    color:#000066;
+    font-size: 14px;
+    border-radius: 26px;
+    padding: 10px 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* contato */
+
+.contato {
+    background-color: #F0F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.contato h2 {
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+
+.contatos {
+    display: flex;
+    justify-content:space-around;
+}
+
+.cont {
+    height: 220px;
+    width: 300px;
+    text-align: center;
+}
+
+.cont img {
+    height: 80px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.cont :hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+
+/* rodapé */
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/* demais páginas */
+
+.sobreoprojeto {
+    background-color:#F0F8FF;
+    padding: 30px 300px;
+}
+
+.sobreoprojeto h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+.sobreoprojeto p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.acessarapp {
+    display: flex;
+    justify-content: center;    
+}
+.acessarapp button {
+    margin-right: 10px;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.tecnologias h2 {
+    margin-bottom: 60px;
+}
+
+.techs {
+    display: flex;
+}
+
+/* Estilos para telas pequenas, como smartphones */
+@media (max-width: 768px) {
+    .caixa-principal {
+      background-size: 100% auto;
+      padding: 10px; /* Reduza o padding para telas menores */
+    }
+  
+    nav {
+      flex-direction: column; /* Empilhar os itens do menu verticalmente */
+      align-items: center; /* Centralizar os itens do menu */
+      padding-top: 10px; /* Reduza o padding no topo do menu */
+    }
+  
+    li {
+      margin-right: 15px; /* Reduza a margem entre os itens do menu */
+      margin-bottom: 5px; /* Adicione uma margem inferior para separar os itens do menu */
+    }
+  
+    .apresentacao {
+      top: 25%; /* Reposicione a apresentação para ficar mais centralizada */
+      left: 50%; /* Reposicione a apresentação para ficar mais centralizada */
+      transform: translateX(-50%); /* Centralize horizontalmente usando transform */
+    }
+  
+    .apresentacao h4 {
+      font-size: 16px; /* Reduza o tamanho do texto */
+    }
+  
+    .titulo {
+      font-size: 200%; /* Reduza o tamanho do título */
+    }
+  
+    /* Estilos para a seção "Sobre Mim" */
+    section {
+      flex-direction: column; /* Empilhar os elementos da seção verticalmente */
+      padding: 40px; /* Reduza o padding para telas menores */
+    }
+  
+    section img {
+      height: auto; /* Permita que a imagem se ajuste ao tamanho da tela */
+      width: 100%; /* Preencha a largura da seção */
+      margin: 0; /* Remova as margens da imagem */
+    }
+  
+    /* Adapte outros estilos conforme necessário para cada seção */
+  
+    /* Estilos para os cards de projetos */
+    .card {
+      height: auto; /* Permita que a altura dos cards se ajuste ao conteúdo */
+      width: 100%; /* Preencha a largura disponível */
+      text-align: center;
+      margin-bottom: 20px; /* Adicione uma margem inferior para separar os cards */
+    }
+  
+    .card img {
+      height: 200px; /* Reduza a altura das imagens */
+      width: auto; /* Permita que a largura das imagens se ajuste ao tamanho da tela */
+      margin-bottom: 10px;
+    }
+  
+    /* Adapte outros estilos conforme necessário para a seção de projetos */
+  
+    /* Estilos para as habilidades */
+    .skills .techs{
+      flex-wrap: wrap; /* Permita que as habilidades sejam dispostas em várias linhas */
+    }
+  
+    .skill {
+      margin-bottom: 20px; /* Adicione uma margem inferior para separar as habilidades */
+    }
+  
+    /* Adapte outros estilos conforme necessário para a seção de habilidades */
+  
+    /* Estilos para a seção de contato */
+    .contatos {
+      flex-direction: column; /* Empilhar os contatos verticalmente */
+    }
+  
+    .cont {
+      margin-bottom: 20px; /* Adicione uma margem inferior para separar os contatos */
+    }
+  
+    /* Adapte outros estilos conforme necessário para a seção de contato */
+  
+    /* Rodapé */
+    footer {
+      font-size: 14px; /* Reduza o tamanho do texto no rodapé */
+    }
+  }  
+  
+  
+  
