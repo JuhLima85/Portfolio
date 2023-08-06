@@ -1,43 +1,40 @@
-/* Estilos para telas pequenas, como smartphones */
 @media (max-width: 768px) {
-    /* Estilos para a seção "Sobre o Projeto" */
     .sobreoprojeto {
-      padding: 20px; /* Reduza o padding para telas menores */
+      padding: 5% 5%;
     }
   
     .sobreoprojeto h1 {
-      font-size: 36px; /* Reduza o tamanho do título */
+      font-size: 36px;
     }
   
     .sobreoprojeto p {
-      font-size: 16px; /* Reduza o tamanho do texto */
+      font-size: 16px;
     }
   
     .acessarapp {
-      flex-direction: column; /* Empilhar os botões verticalmente */
-      align-items: center; /* Centralizar os botões */
+      flex-direction: column;
+      align-items: center;
     }
   
     .acessarapp button {
-      margin-bottom: 10px; /* Adicione uma margem inferior para separar os botões */
+      margin-bottom: 10px;
     }
-  
-    /* Estilos para a seção "Tecnologias usadas" */
+
     .tecnologias {
-      padding: 20px; /* Reduza o padding para telas menores */
+      padding: 20px;
     }
   
     .tecnologias h2 {
-      font-size: 36px; /* Reduza o tamanho do título */
+      font-size: 36px;
     }
   
     .techs {
-      flex-wrap: wrap; /* Permita que as tecnologias sejam dispostas em várias linhas */
+      flex-wrap: wrap;
     }
   
     .skill {
-      width: 120px; /* Reduza a largura das habilidades */
-      margin-bottom: 20px; /* Adicione uma margem inferior para separar as habilidades */
+      width: 120px;
+      margin-bottom: 20px;
     }
   }
   
